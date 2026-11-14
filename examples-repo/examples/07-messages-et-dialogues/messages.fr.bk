@@ -1,0 +1,37 @@
+langue français
+
+application "Messages typés"
+  version 1.0
+  description "Bandeaux, fenêtres, confirmation Oui / Non et saisie"
+  type interface
+
+interface Accueil
+  titre "Messages typés"
+  taille 720 sur 560
+  fond #f8fafc
+
+  étiquette titre "Messages typés"
+    taille du texte 24
+    gras
+
+  champ nom "Votre nom"
+
+  bouton bienvenue "Bienvenue"
+    quand on clique : afficher le message modal "Bienvenue dans BERKIOS !" titre "Bienvenue"
+
+  bouton merci "Dire merci"
+    quand on clique : afficher le message succès "Merci, c'est enregistré"
+
+  bouton alerte "Avertir"
+    quand on clique : afficher le message avertissement modal "Stock bas : 2 produits" titre "Magasin" bouton "Compris"
+
+  bouton panne "Signaler une erreur"
+    quand on clique : afficher le message erreur "Le paiement a été refusé"
+
+  bouton supprimer "Supprimer"
+    quand on clique : afficher le message confirmation "Supprimer ce client ?" titre "Suppression" boutons "Supprimer" "Garder" danger
+      oui : afficher le message succès "Client supprimé"
+      non : afficher le message "Suppression annulée"
+
+  bouton demander "Saisir mon nom"
+    quand on clique : afficher le message saisie "Quel est votre nom ?" dans nom

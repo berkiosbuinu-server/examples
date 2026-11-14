@@ -1,0 +1,5 @@
+module "Bonjour"
+
+fonction principale() -> Entier
+  afficher "Bonjour BERKIOS !"
+  retourner 0

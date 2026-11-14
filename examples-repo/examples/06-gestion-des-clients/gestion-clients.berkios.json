@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.2",
+  "name": "Gestion des clients",
+  "description": "Liste et fiche client avec données de démonstration et formulaire validé localement.",
+  "author": "BERKIOS GRAPHIC",
+  "targets": [
+    "windows",
+    "macos",
+    "linux",
+    "android"
+  ],
+  "edition": "pro",
+  "canvas": {
+    "width": 1280,
+    "height": 800,
+    "background": "#f8fafc"
+  },
+  "widgets": [
+    {
+      "id": "title",
+      "type": "label",
+      "name": "titre",
+      "text": "Gestion des clients",
+      "x": 30,
+      "y": 24,
+      "width": 500,
+      "height": 45,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "fontSize": 28,
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "id": "search",
+      "type": "input",
+      "name": "recherche_client",
+      "text": "Rechercher un client…",
+      "x": 30,
+      "y": 86,
+      "width": 360,
+      "height": 42,
+      "visible": true,
+      "locked": false,
+      "style": {},
+      "inputKind": "text"
+    },
+    {
+      "id": "clients",
+      "type": "table",
+      "name": "liste_clients",
+      "text": "CL-001 · Amine Diallo · amine@example.test · Actif\nCL-002 · Sophie Martin · sophie@example.test · Actif\nCL-003 · Kivu Services · contact@example.test · À rappeler\nCL-004 · Noah Bernard · noah@example.test · Inactif",
+      "x": 30,
+      "y": 150,
+      "width": 680,
+      "height": 380,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "background": "#ffffff",
+        "radius": 12,
+        "borderWidth": 1
+      }
+    },
+    {
+      "id": "detail-title",
+      "type": "label",
+      "name": "fiche_titre",
+      "text": "Fiche client",
+      "x": 750,
+      "y": 150,
+      "width": 350,
+      "height": 34,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "fontSize": 21,
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "id": "name",
+      "type": "input",
+      "name": "nom_client",
+      "text": "Nom complet",
+      "x": 750,
+      "y": 202,
+      "width": 380,
+      "height": 42,
+      "visible": true,
+      "locked": false,
+      "style": {},
+      "inputKind": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "id": "email",
+      "type": "input",
+      "name": "email_client",
+      "text": "Adresse e-mail",
+      "x": 750,
+      "y": 254,
+      "width": 380,
+      "height": 42,
+      "visible": true,
+      "locked": false,
+      "style": {},
+      "inputKind": "email",
+      "validation": {
+        "required": true,
+        "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+        "message": "Adresse e-mail invalide."
+      }
+    },
+    {
+      "id": "phone",
+      "type": "input",
+      "name": "telephone_client",
+      "text": "Téléphone",
+      "x": 750,
+      "y": 306,
+      "width": 380,
+      "height": 42,
+      "visible": true,
+      "locked": false,
+      "style": {},
+      "inputKind": "tel"
+    },
+    {
+      "id": "save",
+      "type": "button",
+      "name": "enregistrer_client",
+      "text": "Valider le formulaire",
+      "x": 750,
+      "y": 368,
+      "width": 230,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "background": "#175cd3",
+        "color": "#ffffff",
+        "radius": 9,
+        "fontWeight": "bold",
+        "align": "center"
+      },
+      "buttonAction": {
+        "type": "submit-form"
+      }
+    },
+    {
+      "id": "reset",
+      "type": "button",
+      "name": "vider_formulaire",
+      "text": "Effacer",
+      "x": 992,
+      "y": 368,
+      "width": 138,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "background": "#ffffff",
+        "color": "#344054",
+        "radius": 9,
+        "borderWidth": 1,
+        "align": "center"
+      },
+      "buttonAction": {
+        "type": "reset-form"
+      }
+    },
+    {
+      "id": "note",
+      "type": "label",
+      "name": "note",
+      "text": "Exemple autonome : validation locale uniquement, sans sauvegarde serveur.",
+      "x": 750,
+      "y": 432,
+      "width": 380,
+      "height": 62,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "fontSize": 12,
+        "color": "#667085"
+      }
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "main",
+      "name": "Accueil",
+      "kind": "page",
+      "canvas": {
+        "width": 1280,
+        "height": 800,
+        "background": "#f8fafc"
+      },
+      "widgets": [
+        {
+          "id": "title",
+          "type": "label",
+          "name": "titre",
+          "text": "Gestion des clients",
+          "x": 30,
+          "y": 24,
+          "width": 500,
+          "height": 45,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "fontSize": 28,
+            "fontWeight": "bold"
+          }
+        },
+        {
+          "id": "search",
+          "type": "input",
+          "name": "recherche_client",
+          "text": "Rechercher un client…",
+          "x": 30,
+          "y": 86,
+          "width": 360,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {},
+          "inputKind": "text"
+        },
+        {
+          "id": "clients",
+          "type": "table",
+          "name": "liste_clients",
+          "text": "CL-001 · Amine Diallo · amine@example.test · Actif\nCL-002 · Sophie Martin · sophie@example.test · Actif\nCL-003 · Kivu Services · contact@example.test · À rappeler\nCL-004 · Noah Bernard · noah@example.test · Inactif",
+          "x": 30,
+          "y": 150,
+          "width": 680,
+          "height": 380,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "background": "#ffffff",
+            "radius": 12,
+            "borderWidth": 1
+          }
+        },
+        {
+          "id": "detail-title",
+          "type": "label",
+          "name": "fiche_titre",
+          "text": "Fiche client",
+          "x": 750,
+          "y": 150,
+          "width": 350,
+          "height": 34,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "fontSize": 21,
+            "fontWeight": "bold"
+          }
+        },
+        {
+          "id": "name",
+          "type": "input",
+          "name": "nom_client",
+          "text": "Nom complet",
+          "x": 750,
+          "y": 202,
+          "width": 380,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {},
+          "inputKind": "text",
+          "validation": {
+            "required": true
+          }
+        },
+        {
+          "id": "email",
+          "type": "input",
+          "name": "email_client",
+          "text": "Adresse e-mail",
+          "x": 750,
+          "y": 254,
+          "width": 380,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {},
+          "inputKind": "email",
+          "validation": {
+            "required": true,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "message": "Adresse e-mail invalide."
+          }
+        },
+        {
+          "id": "phone",
+          "type": "input",
+          "name": "telephone_client",
+          "text": "Téléphone",
+          "x": 750,
+          "y": 306,
+          "width": 380,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {},
+          "inputKind": "tel"
+        },
+        {
+          "id": "save",
+          "type": "button",
+          "name": "enregistrer_client",
+          "text": "Valider le formulaire",
+          "x": 750,
+          "y": 368,
+          "width": 230,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "background": "#175cd3",
+            "color": "#ffffff",
+            "radius": 9,
+            "fontWeight": "bold",
+            "align": "center"
+          },
+          "buttonAction": {
+            "type": "submit-form"
+          }
+        },
+        {
+          "id": "reset",
+          "type": "button",
+          "name": "vider_formulaire",
+          "text": "Effacer",
+          "x": 992,
+          "y": 368,
+          "width": 138,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "background": "#ffffff",
+            "color": "#344054",
+            "radius": 9,
+            "borderWidth": 1,
+            "align": "center"
+          },
+          "buttonAction": {
+            "type": "reset-form"
+          }
+        },
+        {
+          "id": "note",
+          "type": "label",
+          "name": "note",
+          "text": "Exemple autonome : validation locale uniquement, sans sauvegarde serveur.",
+          "x": 750,
+          "y": 432,
+          "width": 380,
+          "height": 62,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "fontSize": 12,
+            "color": "#667085"
+          }
+        }
+      ]
+    }
+  ],
+  "activeInterfaceId": "main",
+  "createdAt": "2026-10-15T00:00:00.000Z",
+  "updatedAt": "2026-10-15T00:00:00.000Z",
+  "mode": "standalone"
+}

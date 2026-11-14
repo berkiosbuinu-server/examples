@@ -1,0 +1,513 @@
+{
+  "schemaVersion": "1.2",
+  "mode": "standalone",
+  "name": "Messages typés",
+  "description": "Bandeaux, fenêtres, confirmation Oui / Non et saisie",
+  "author": "",
+  "appVersion": "1.0.0",
+  "window": {
+    "title": null,
+    "width": 1024,
+    "height": 720,
+    "minWidth": 320,
+    "minHeight": 280,
+    "maxWidth": null,
+    "maxHeight": null,
+    "resizable": true,
+    "maximized": false,
+    "frameless": false,
+    "fullscreen": false,
+    "positionX": null,
+    "positionY": null,
+    "fixedSize": false
+  },
+  "targets": [
+    "windows",
+    "macos",
+    "linux",
+    "android"
+  ],
+  "edition": "pro",
+  "canvas": {
+    "width": 720,
+    "height": 560,
+    "background": "#f8fafc"
+  },
+  "widgets": [
+    {
+      "id": "w_accueil_titre",
+      "type": "label",
+      "name": "titre",
+      "text": "Messages typés",
+      "x": 32,
+      "y": 32,
+      "width": 260,
+      "height": 40,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#182230",
+        "background": "transparent",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "align": "left",
+        "radius": 0,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      }
+    },
+    {
+      "id": "w_accueil_nom",
+      "type": "input",
+      "name": "nom",
+      "text": "Votre nom",
+      "x": 32,
+      "y": 88,
+      "width": 240,
+      "height": 42,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#475467",
+        "background": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "align": "left",
+        "radius": 8,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 1
+      }
+    },
+    {
+      "id": "w_accueil_bienvenue",
+      "type": "button",
+      "name": "bienvenue",
+      "text": "Bienvenue",
+      "x": 32,
+      "y": 146,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Bienvenue dans BERKIOS !",
+        "messageDisplay": "modal",
+        "messageTitle": "Bienvenue"
+      }
+    },
+    {
+      "id": "w_accueil_merci",
+      "type": "button",
+      "name": "merci",
+      "text": "Dire merci",
+      "x": 32,
+      "y": 206,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Merci, c'est enregistré",
+        "messageKind": "success"
+      }
+    },
+    {
+      "id": "w_accueil_alerte",
+      "type": "button",
+      "name": "alerte",
+      "text": "Avertir",
+      "x": 32,
+      "y": 266,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Stock bas : 2 produits",
+        "messageKind": "warning",
+        "messageDisplay": "modal",
+        "messageTitle": "Magasin",
+        "okLabel": "Compris"
+      }
+    },
+    {
+      "id": "w_accueil_panne",
+      "type": "button",
+      "name": "panne",
+      "text": "Signaler une erreur",
+      "x": 32,
+      "y": 326,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Le paiement a été refusé",
+        "messageKind": "error"
+      }
+    },
+    {
+      "id": "w_accueil_supprimer",
+      "type": "button",
+      "name": "supprimer",
+      "text": "Supprimer",
+      "x": 32,
+      "y": 386,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Supprimer ce client ?",
+        "messageKind": "confirm",
+        "messageTitle": "Suppression",
+        "okLabel": "Supprimer",
+        "cancelLabel": "Garder",
+        "danger": true,
+        "onYes": {
+          "type": "message",
+          "message": "Client supprimé",
+          "messageKind": "success"
+        },
+        "onNo": {
+          "type": "message",
+          "message": "Suppression annulée"
+        }
+      }
+    },
+    {
+      "id": "w_accueil_demander",
+      "type": "button",
+      "name": "demander",
+      "text": "Saisir mon nom",
+      "x": 32,
+      "y": 446,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Quel est votre nom ?",
+        "messageKind": "ask",
+        "responseTargetWidgetId": "w_accueil_nom"
+      }
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "i_accueil",
+      "name": "Accueil",
+      "kind": "page",
+      "canvas": {
+        "width": 720,
+        "height": 560,
+        "background": "#f8fafc"
+      },
+      "widgets": [
+        {
+          "id": "w_accueil_titre",
+          "type": "label",
+          "name": "titre",
+          "text": "Messages typés",
+          "x": 32,
+          "y": 32,
+          "width": 260,
+          "height": 40,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#182230",
+            "background": "transparent",
+            "fontSize": 24,
+            "fontWeight": "bold",
+            "align": "left",
+            "radius": 0,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          }
+        },
+        {
+          "id": "w_accueil_nom",
+          "type": "input",
+          "name": "nom",
+          "text": "Votre nom",
+          "x": 32,
+          "y": 88,
+          "width": 240,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#475467",
+            "background": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "normal",
+            "align": "left",
+            "radius": 8,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 1
+          }
+        },
+        {
+          "id": "w_accueil_bienvenue",
+          "type": "button",
+          "name": "bienvenue",
+          "text": "Bienvenue",
+          "x": 32,
+          "y": 146,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Bienvenue dans BERKIOS !",
+            "messageDisplay": "modal",
+            "messageTitle": "Bienvenue"
+          }
+        },
+        {
+          "id": "w_accueil_merci",
+          "type": "button",
+          "name": "merci",
+          "text": "Dire merci",
+          "x": 32,
+          "y": 206,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Merci, c'est enregistré",
+            "messageKind": "success"
+          }
+        },
+        {
+          "id": "w_accueil_alerte",
+          "type": "button",
+          "name": "alerte",
+          "text": "Avertir",
+          "x": 32,
+          "y": 266,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Stock bas : 2 produits",
+            "messageKind": "warning",
+            "messageDisplay": "modal",
+            "messageTitle": "Magasin",
+            "okLabel": "Compris"
+          }
+        },
+        {
+          "id": "w_accueil_panne",
+          "type": "button",
+          "name": "panne",
+          "text": "Signaler une erreur",
+          "x": 32,
+          "y": 326,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Le paiement a été refusé",
+            "messageKind": "error"
+          }
+        },
+        {
+          "id": "w_accueil_supprimer",
+          "type": "button",
+          "name": "supprimer",
+          "text": "Supprimer",
+          "x": 32,
+          "y": 386,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Supprimer ce client ?",
+            "messageKind": "confirm",
+            "messageTitle": "Suppression",
+            "okLabel": "Supprimer",
+            "cancelLabel": "Garder",
+            "danger": true,
+            "onYes": {
+              "type": "message",
+              "message": "Client supprimé",
+              "messageKind": "success"
+            },
+            "onNo": {
+              "type": "message",
+              "message": "Suppression annulée"
+            }
+          }
+        },
+        {
+          "id": "w_accueil_demander",
+          "type": "button",
+          "name": "demander",
+          "text": "Saisir mon nom",
+          "x": 32,
+          "y": 446,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Quel est votre nom ?",
+            "messageKind": "ask",
+            "responseTargetWidgetId": "w_accueil_nom"
+          }
+        }
+      ]
+    }
+  ],
+  "activeInterfaceId": "i_accueil",
+  "mainInterfaceId": "i_accueil",
+  "createdAt": "2026-11-14T06:49:31.311Z",
+  "updatedAt": "2026-11-14T06:49:31.311Z",
+  "x-berkios": {
+    "formatVersion": "0.1",
+    "sourceLanguage": "fr",
+    "models": [],
+    "tables": {},
+    "interfaceTitles": {
+      "i_accueil": "Messages typés"
+    }
+  }
+}

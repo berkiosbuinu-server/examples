@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.2",
+  "mode": "standalone",
+  "name": "Ma première application",
+  "description": "",
+  "author": "",
+  "appVersion": "1.0.0",
+  "window": {
+    "title": null,
+    "width": 1024,
+    "height": 720,
+    "minWidth": 320,
+    "minHeight": 280,
+    "maxWidth": null,
+    "maxHeight": null,
+    "resizable": true,
+    "maximized": false,
+    "frameless": false,
+    "fullscreen": false,
+    "positionX": null,
+    "positionY": null,
+    "fixedSize": false
+  },
+  "targets": [
+    "windows",
+    "macos",
+    "linux",
+    "android"
+  ],
+  "edition": "pro",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "background": "#ffffff"
+  },
+  "widgets": [
+    {
+      "id": "w_accueil_titre",
+      "type": "label",
+      "name": "titre",
+      "text": "Bonjour",
+      "x": 32,
+      "y": 32,
+      "width": 260,
+      "height": 40,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#182230",
+        "background": "transparent",
+        "fontSize": 26,
+        "fontWeight": "bold",
+        "align": "left",
+        "radius": 0,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      }
+    },
+    {
+      "id": "w_accueil_valider",
+      "type": "button",
+      "name": "valider",
+      "text": "Cliquer ici",
+      "x": 32,
+      "y": 88,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "buttonAction": {
+        "type": "message",
+        "message": "Bravo !"
+      }
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "i_accueil",
+      "name": "Accueil",
+      "kind": "page",
+      "canvas": {
+        "width": 1280,
+        "height": 720,
+        "background": "#ffffff"
+      },
+      "widgets": [
+        {
+          "id": "w_accueil_titre",
+          "type": "label",
+          "name": "titre",
+          "text": "Bonjour",
+          "x": 32,
+          "y": 32,
+          "width": 260,
+          "height": 40,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#182230",
+            "background": "transparent",
+            "fontSize": 26,
+            "fontWeight": "bold",
+            "align": "left",
+            "radius": 0,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          }
+        },
+        {
+          "id": "w_accueil_valider",
+          "type": "button",
+          "name": "valider",
+          "text": "Cliquer ici",
+          "x": 32,
+          "y": 88,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "message",
+            "message": "Bravo !"
+          }
+        }
+      ]
+    }
+  ],
+  "activeInterfaceId": "i_accueil",
+  "mainInterfaceId": "i_accueil",
+  "createdAt": "2026-11-14T06:49:31.101Z",
+  "updatedAt": "2026-11-14T06:49:31.101Z",
+  "x-berkios": {
+    "formatVersion": "0.1",
+    "sourceLanguage": "fr",
+    "models": [],
+    "tables": {},
+    "interfaceTitles": {}
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "schemaVersion": "1.2",
+  "mode": "standalone",
+  "name": "Gestion de stock",
+  "description": "Suivi simple des produits",
+  "author": "BERKIOS",
+  "appVersion": "1.0.0",
+  "window": {
+    "title": null,
+    "width": 1024,
+    "height": 720,
+    "minWidth": 320,
+    "minHeight": 280,
+    "maxWidth": null,
+    "maxHeight": null,
+    "resizable": true,
+    "maximized": false,
+    "frameless": false,
+    "fullscreen": false,
+    "positionX": null,
+    "positionY": null,
+    "fixedSize": false
+  },
+  "targets": [
+    "windows",
+    "macos",
+    "linux",
+    "android"
+  ],
+  "edition": "pro",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "background": "#f8fafc"
+  },
+  "widgets": [
+    {
+      "id": "w_accueil_en_tete",
+      "type": "panel",
+      "name": "en_tete",
+      "text": "",
+      "x": 32,
+      "y": 32,
+      "width": 1216,
+      "height": 76,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#182230",
+        "background": "#f1f5f9",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "align": "left",
+        "radius": 12,
+        "borderColor": "#e2e8f0",
+        "borderWidth": 1
+      }
+    },
+    {
+      "id": "w_accueil_titre",
+      "type": "label",
+      "name": "titre",
+      "text": "Produits en stock",
+      "x": 48,
+      "y": 48,
+      "width": 260,
+      "height": 40,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#182230",
+        "background": "transparent",
+        "fontSize": 26,
+        "fontWeight": "bold",
+        "align": "left",
+        "radius": 0,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "groupName": "en_tete"
+    },
+    {
+      "id": "w_accueil_ajouter",
+      "type": "button",
+      "name": "ajouter",
+      "text": "Ajouter un produit",
+      "x": 324,
+      "y": 48,
+      "width": 180,
+      "height": 44,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#ffffff",
+        "background": "#2563eb",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "align": "center",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 0
+      },
+      "groupName": "en_tete",
+      "buttonAction": {
+        "type": "open-interface",
+        "targetInterfaceId": "i_formulaire_produit"
+      }
+    },
+    {
+      "id": "w_accueil_liste",
+      "type": "table",
+      "name": "liste",
+      "text": "liste",
+      "x": 32,
+      "y": 124,
+      "width": 1216,
+      "height": 240,
+      "visible": true,
+      "locked": false,
+      "style": {
+        "color": "#182230",
+        "background": "#ffffff",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "align": "left",
+        "radius": 10,
+        "borderColor": "#cbd5e1",
+        "borderWidth": 1
+      }
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "i_accueil",
+      "name": "Accueil",
+      "kind": "page",
+      "canvas": {
+        "width": 1280,
+        "height": 720,
+        "background": "#f8fafc"
+      },
+      "widgets": [
+        {
+          "id": "w_accueil_en_tete",
+          "type": "panel",
+          "name": "en_tete",
+          "text": "",
+          "x": 32,
+          "y": 32,
+          "width": 1216,
+          "height": 76,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#182230",
+            "background": "#f1f5f9",
+            "fontSize": 14,
+            "fontWeight": "normal",
+            "align": "left",
+            "radius": 12,
+            "borderColor": "#e2e8f0",
+            "borderWidth": 1
+          }
+        },
+        {
+          "id": "w_accueil_titre",
+          "type": "label",
+          "name": "titre",
+          "text": "Produits en stock",
+          "x": 48,
+          "y": 48,
+          "width": 260,
+          "height": 40,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#182230",
+            "background": "transparent",
+            "fontSize": 26,
+            "fontWeight": "bold",
+            "align": "left",
+            "radius": 0,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "groupName": "en_tete"
+        },
+        {
+          "id": "w_accueil_ajouter",
+          "type": "button",
+          "name": "ajouter",
+          "text": "Ajouter un produit",
+          "x": 324,
+          "y": 48,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "groupName": "en_tete",
+          "buttonAction": {
+            "type": "open-interface",
+            "targetInterfaceId": "i_formulaire_produit"
+          }
+        },
+        {
+          "id": "w_accueil_liste",
+          "type": "table",
+          "name": "liste",
+          "text": "liste",
+          "x": 32,
+          "y": 124,
+          "width": 1216,
+          "height": 240,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#182230",
+            "background": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "normal",
+            "align": "left",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "i_formulaire_produit",
+      "name": "Formulaire produit",
+      "kind": "modal",
+      "canvas": {
+        "width": 520,
+        "height": 380,
+        "background": "#ffffff"
+      },
+      "widgets": [
+        {
+          "id": "w_formulaire_produit_sku",
+          "type": "input",
+          "name": "sku",
+          "text": "Référence",
+          "x": 32,
+          "y": 32,
+          "width": 240,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#475467",
+            "background": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "normal",
+            "align": "left",
+            "radius": 8,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 1
+          },
+          "validation": {
+            "required": true
+          }
+        },
+        {
+          "id": "w_formulaire_produit_nom",
+          "type": "input",
+          "name": "nom",
+          "text": "Nom du produit",
+          "x": 32,
+          "y": 90,
+          "width": 240,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#475467",
+            "background": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "normal",
+            "align": "left",
+            "radius": 8,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 1
+          },
+          "validation": {
+            "required": true
+          }
+        },
+        {
+          "id": "w_formulaire_produit_quantite",
+          "type": "input",
+          "name": "quantite",
+          "text": "Quantité",
+          "x": 32,
+          "y": 148,
+          "width": 240,
+          "height": 42,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#475467",
+            "background": "#ffffff",
+            "fontSize": 14,
+            "fontWeight": "normal",
+            "align": "left",
+            "radius": 8,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 1
+          },
+          "inputKind": "number",
+          "validation": {
+            "min": 0
+          }
+        },
+        {
+          "id": "w_formulaire_produit_enregistrer",
+          "type": "button",
+          "name": "enregistrer",
+          "text": "Enregistrer",
+          "x": 32,
+          "y": 206,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "submit-form"
+          }
+        },
+        {
+          "id": "w_formulaire_produit_annuler",
+          "type": "button",
+          "name": "annuler",
+          "text": "Annuler",
+          "x": 32,
+          "y": 266,
+          "width": 180,
+          "height": 44,
+          "visible": true,
+          "locked": false,
+          "style": {
+            "color": "#ffffff",
+            "background": "#2563eb",
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "align": "center",
+            "radius": 10,
+            "borderColor": "#cbd5e1",
+            "borderWidth": 0
+          },
+          "buttonAction": {
+            "type": "close-interface"
+          }
+        }
+      ]
+    }
+  ],
+  "activeInterfaceId": "i_accueil",
+  "mainInterfaceId": "i_accueil",
+  "createdAt": "2026-11-14T06:49:31.197Z",
+  "updatedAt": "2026-11-14T06:49:31.197Z",
+  "x-berkios": {
+    "formatVersion": "0.1",
+    "sourceLanguage": "fr",
+    "models": [
+      {
+        "name": "Produit",
+        "fields": [
+          {
+            "name": "sku",
+            "type": "text",
+            "unique": true,
+            "required": true
+          },
+          {
+            "name": "nom",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "quantité",
+            "type": "integer",
+            "min": 0
+          },
+          {
+            "name": "prix",
+            "type": "amount"
+          }
+        ]
+      }
+    ],
+    "tables": {
+      "w_accueil_liste": {
+        "model": "Produit",
+        "columns": [
+          "sku",
+          "nom",
+          "quantité",
+          "prix"
+        ]
+      }
+    },
+    "interfaceTitles": {
+      "i_accueil": "Produits en stock",
+      "i_formulaire_produit": "Nouveau produit"
+    }
+  }
+}

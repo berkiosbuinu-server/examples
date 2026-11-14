@@ -1,0 +1,153 @@
+{
+  "format": "berkios-examples/1",
+  "repository": "https://github.com/berkiosbuinu-server/examples",
+  "examples": [
+    {
+      "id": "01-bonjour-berkios",
+      "title": "Bonjour BERKIOS",
+      "kind": "Core",
+      "level": "Débutant",
+      "tags": [
+        "Core",
+        "premier programme",
+        "afficher"
+      ],
+      "summary": "Votre tout premier programme BERKIOS Core : trois lignes, une commande, un résultat.",
+      "asset": "01-bonjour-berkios.zip",
+      "guide": "https://docs.berkios.com/galerie/bonjour-berkios/"
+    },
+    {
+      "id": "02-remise-et-total",
+      "title": "Remise et total à payer",
+      "kind": "Core",
+      "level": "Débutant",
+      "tags": [
+        "Core",
+        "fonctions",
+        "modules",
+        "calcul"
+      ],
+      "summary": "Calculer une remise avec des fonctions, puis découper le programme en deux fichiers (modules).",
+      "asset": "02-remise-et-total.zip",
+      "guide": "https://docs.berkios.com/galerie/remise-et-total/"
+    },
+    {
+      "id": "03-compte-bancaire",
+      "title": "Compte bancaire",
+      "kind": "Core",
+      "level": "Intermédiaire",
+      "tags": [
+        "Core",
+        "classes",
+        "objets"
+      ],
+      "summary": "Une classe Compte avec dépôt et retrait : champs, méthodes et objets.",
+      "asset": "03-compte-bancaire.zip",
+      "guide": "https://docs.berkios.com/galerie/compte-bancaire/"
+    },
+    {
+      "id": "04-ma-premiere-application",
+      "title": "Ma première application",
+      "kind": "Code",
+      "level": "Débutant",
+      "tags": [
+        "Code",
+        "interface",
+        "bouton"
+      ],
+      "summary": "Une fenêtre, un titre, un bouton : votre première application décrite en BERKIOS CODE.",
+      "asset": "04-ma-premiere-application.zip",
+      "guide": "https://docs.berkios.com/galerie/ma-premiere-application/"
+    },
+    {
+      "id": "05-gestion-de-stock",
+      "title": "Gestion de stock",
+      "kind": "Code",
+      "level": "Intermédiaire",
+      "tags": [
+        "Code",
+        "modèle de données",
+        "tableau",
+        "formulaire"
+      ],
+      "summary": "Un modèle Produit, un tableau et un formulaire modal pour suivre un stock.",
+      "asset": "05-gestion-de-stock.zip",
+      "guide": "https://docs.berkios.com/galerie/gestion-de-stock/"
+    },
+    {
+      "id": "06-gestion-des-clients",
+      "title": "Gestion des clients",
+      "kind": "Studio",
+      "level": "Débutant",
+      "tags": [
+        "Studio",
+        "formulaire",
+        "validation",
+        "tableau"
+      ],
+      "summary": "Liste de clients et fiche avec champs obligatoires et validation d'e-mail, sans écrire de code.",
+      "asset": "06-gestion-des-clients.zip",
+      "guide": "https://docs.berkios.com/galerie/gestion-des-clients/"
+    },
+    {
+      "id": "07-messages-et-dialogues",
+      "title": "Messages et dialogues",
+      "kind": "Code",
+      "level": "Débutant",
+      "tags": [
+        "Code",
+        "messages",
+        "confirmation",
+        "saisie"
+      ],
+      "summary": "Bandeaux, fenêtres modales, confirmation Oui / Non et saisie d'un nom.",
+      "asset": "07-messages-et-dialogues.zip",
+      "guide": "https://docs.berkios.com/galerie/messages-et-dialogues/"
+    },
+    {
+      "id": "08-navigation-laterale",
+      "title": "Navigation latérale repliable",
+      "kind": "Studio",
+      "level": "Intermédiaire",
+      "tags": [
+        "Studio",
+        "navigation",
+        "menu",
+        "interfaces"
+      ],
+      "summary": "Un espace de gestion avec menu à gauche, contenu à droite et bouton pour replier le menu.",
+      "asset": "08-navigation-laterale.zip",
+      "guide": "https://docs.berkios.com/galerie/navigation-laterale/"
+    },
+    {
+      "id": "09-outil-en-ligne-de-commande",
+      "title": "Outil en ligne de commande",
+      "kind": "Code",
+      "level": "Intermédiaire",
+      "tags": [
+        "Code",
+        "commande",
+        "arguments",
+        "boucles"
+      ],
+      "summary": "Trois commandes (saluer, calculer, compter) avec arguments, options, conditions et boucles.",
+      "asset": "09-outil-en-ligne-de-commande.zip",
+      "guide": "https://docs.berkios.com/galerie/outil-en-ligne-de-commande/"
+    },
+    {
+      "id": "10-echeances-et-chronometre",
+      "title": "Échéances et chronomètre",
+      "kind": "Studio",
+      "level": "Intermédiaire",
+      "tags": [
+        "Studio",
+        "modules",
+        "datetime",
+        "chronomètre"
+      ],
+      "summary": "Dates relatives, jours restants et chronomètre avec les bibliothèques datetime et systeme.",
+      "asset": "10-echeances-et-chronometre.zip",
+      "guide": "https://docs.berkios.com/galerie/echeances-et-chronometre/"
+    }
+  ]
+}

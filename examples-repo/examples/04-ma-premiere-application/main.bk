@@ -1,0 +1,13 @@
+langue français
+
+application "Ma première application"
+  version 1.0
+  type interface
+  édition pro
+
+interface Accueil
+  étiquette titre "Bonjour"
+    taille du texte 26
+    gras
+  bouton valider "Cliquer ici"
+    quand on clique : afficher "Bravo !"

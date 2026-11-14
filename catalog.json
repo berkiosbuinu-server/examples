@@ -14,7 +14,7 @@
       ],
       "summary": "Votre tout premier programme BERKIOS Core : trois lignes, une commande, un résultat.",
       "asset": "01-bonjour-berkios.zip",
-      "guide": "https://docs.berkios.com/galerie/bonjour-berkios/"
+      "guide": "https://docs.berkios.online/galerie/bonjour-berkios/"
     },
     {
       "id": "02-remise-et-total",
@@ -29,7 +29,7 @@
       ],
       "summary": "Calculer une remise avec des fonctions, puis découper le programme en deux fichiers (modules).",
       "asset": "02-remise-et-total.zip",
-      "guide": "https://docs.berkios.com/galerie/remise-et-total/"
+      "guide": "https://docs.berkios.online/galerie/remise-et-total/"
     },
     {
       "id": "03-compte-bancaire",
@@ -43,7 +43,7 @@
       ],
       "summary": "Une classe Compte avec dépôt et retrait : champs, méthodes et objets.",
       "asset": "03-compte-bancaire.zip",
-      "guide": "https://docs.berkios.com/galerie/compte-bancaire/"
+      "guide": "https://docs.berkios.online/galerie/compte-bancaire/"
     },
     {
       "id": "04-ma-premiere-application",
@@ -57,7 +57,7 @@
       ],
       "summary": "Une fenêtre, un titre, un bouton : votre première application décrite en BERKIOS CODE.",
       "asset": "04-ma-premiere-application.zip",
-      "guide": "https://docs.berkios.com/galerie/ma-premiere-application/"
+      "guide": "https://docs.berkios.online/galerie/ma-premiere-application/"
     },
     {
       "id": "05-gestion-de-stock",
@@ -72,7 +72,7 @@
       ],
       "summary": "Un modèle Produit, un tableau et un formulaire modal pour suivre un stock.",
       "asset": "05-gestion-de-stock.zip",
-      "guide": "https://docs.berkios.com/galerie/gestion-de-stock/"
+      "guide": "https://docs.berkios.online/galerie/gestion-de-stock/"
     },
     {
       "id": "06-gestion-des-clients",
@@ -87,7 +87,7 @@
       ],
       "summary": "Liste de clients et fiche avec champs obligatoires et validation d'e-mail, sans écrire de code.",
       "asset": "06-gestion-des-clients.zip",
-      "guide": "https://docs.berkios.com/galerie/gestion-des-clients/"
+      "guide": "https://docs.berkios.online/galerie/gestion-des-clients/"
     },
     {
       "id": "07-messages-et-dialogues",
@@ -102,7 +102,7 @@
       ],
       "summary": "Bandeaux, fenêtres modales, confirmation Oui / Non et saisie d'un nom.",
       "asset": "07-messages-et-dialogues.zip",
-      "guide": "https://docs.berkios.com/galerie/messages-et-dialogues/"
+      "guide": "https://docs.berkios.online/galerie/messages-et-dialogues/"
     },
     {
       "id": "08-navigation-laterale",
@@ -117,7 +117,7 @@
       ],
       "summary": "Un espace de gestion avec menu à gauche, contenu à droite et bouton pour replier le menu.",
       "asset": "08-navigation-laterale.zip",
-      "guide": "https://docs.berkios.com/galerie/navigation-laterale/"
+      "guide": "https://docs.berkios.online/galerie/navigation-laterale/"
     },
     {
       "id": "09-outil-en-ligne-de-commande",
@@ -132,7 +132,7 @@
       ],
       "summary": "Trois commandes (saluer, calculer, compter) avec arguments, options, conditions et boucles.",
       "asset": "09-outil-en-ligne-de-commande.zip",
-      "guide": "https://docs.berkios.com/galerie/outil-en-ligne-de-commande/"
+      "guide": "https://docs.berkios.online/galerie/outil-en-ligne-de-commande/"
     },
     {
       "id": "10-echeances-et-chronometre",
@@ -147,7 +147,7 @@
       ],
       "summary": "Dates relatives, jours restants et chronomètre avec les bibliothèques datetime et systeme.",
       "asset": "10-echeances-et-chronometre.zip",
-      "guide": "https://docs.berkios.com/galerie/echeances-et-chronometre/"
+      "guide": "https://docs.berkios.online/galerie/echeances-et-chronometre/"
     }
   ]
 }

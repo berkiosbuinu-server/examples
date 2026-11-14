@@ -13,4 +13,4 @@ berkios core compte.bks
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/compte-bancaire/
+https://docs.berkios.online/galerie/compte-bancaire/

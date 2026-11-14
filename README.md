@@ -1,6 +1,6 @@
 # Exemples BERKIOS
 
-Exemples d'applications pour apprendre BERKIOS Studio, BERKIOS Code et BERKIOS Core. Chaque exemple est expliqué de A à Z sur **https://docs.berkios.com/galerie/**.
+Exemples d'applications pour apprendre BERKIOS Studio, BERKIOS Code et BERKIOS Core. Chaque exemple est expliqué de A à Z sur **https://docs.berkios.online/galerie/**.
 
 ## Les 10 premiers exemples
 
@@ -37,7 +37,7 @@ scripts/build-release.mjs   Fabrique dist/<id>.zip pour chaque exemple
    ```
    Le workflow crée la release GitHub avec un fichier `<id>.zip` par exemple.
 
-La Galerie de **docs.berkios.com** lit la **dernière release** (fichiers `.zip`) et `catalog.json` : un exemple ajouté ici apparaît sans modifier le site.
+La Galerie de **docs.berkios.online** lit la **dernière release** (fichiers `.zip`) et `catalog.json` : un exemple ajouté ici apparaît sans modifier le site.
 
 ## Utiliser un exemple
 

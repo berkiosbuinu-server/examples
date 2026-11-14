@@ -13,4 +13,4 @@ berkios apercu main.bk
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/ma-premiere-application/
+https://docs.berkios.online/galerie/ma-premiere-application/

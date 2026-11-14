@@ -13,4 +13,4 @@ Fichier → Importer, puis mode Aperçu
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/gestion-des-clients/
+https://docs.berkios.online/galerie/gestion-des-clients/

@@ -13,4 +13,4 @@ Fichier → Importer, puis mode Aperçu
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/echeances-et-chronometre/
+https://docs.berkios.online/galerie/echeances-et-chronometre/

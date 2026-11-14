@@ -13,4 +13,4 @@ berkios lancer outils.fr.bk saluer Amina
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/outil-en-ligne-de-commande/
+https://docs.berkios.online/galerie/outil-en-ligne-de-commande/

@@ -13,4 +13,4 @@ berkios core bonjour.bks
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/bonjour-berkios/
+https://docs.berkios.online/galerie/bonjour-berkios/

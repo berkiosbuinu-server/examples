@@ -13,4 +13,4 @@ berkios core main-fr.bks
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/remise-et-total/
+https://docs.berkios.online/galerie/remise-et-total/

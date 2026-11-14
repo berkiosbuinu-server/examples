@@ -13,4 +13,4 @@ berkios apercu stock.fr.bk
 
 ## Guide complet, pas à pas
 
-https://docs.berkios.com/galerie/gestion-de-stock/
+https://docs.berkios.online/galerie/gestion-de-stock/
